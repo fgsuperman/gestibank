@@ -1,9 +1,11 @@
 package com.wha.dao;
 
 import java.util.List;
+
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
 import com.wha.model.Employee;
 @Repository
 public class EmployeeDAOImpl implements EmployeeDAO {
@@ -33,9 +35,9 @@ public class EmployeeDAOImpl implements EmployeeDAO {
  
     }
  
-    public Employee getEmployee(int employeeId) {
+    public Employee getEmployee(int empid) {
         return (Employee) sessionFactory.getCurrentSession().get(
-                Employee.class, employeeId);
+                Employee.class, empid);
     }
  
     @Override
