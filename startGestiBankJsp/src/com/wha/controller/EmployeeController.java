@@ -81,6 +81,14 @@ public class EmployeeController {
 	
 	//-- Debut Partie controller pour conseiller ---------------------------------
 	
+	@RequestMapping(value = "/listConseiller")
+	public ModelAndView listConseiller(ModelAndView model) throws IOException {
+		List<Conseiller> listConseiller = conseillerService.getAllConseillers();
+		model.addObject("listConseiller", listConseiller);
+		model.setViewName("listConseiller");
+		return model;
+	}
+	
 	@RequestMapping(value = "/newConseiller", method = RequestMethod.GET)
 	public ModelAndView newConseiller(ModelAndView model) {
 		Conseiller conseiller = new Conseiller();
@@ -91,13 +99,13 @@ public class EmployeeController {
 	
 	@RequestMapping(value = "/saveConseiller", method = RequestMethod.POST)
 	public ModelAndView saveConseiller(@ModelAttribute Conseiller conseiller) {
-		if (conseiller.getMatriculeCnsi() == 0) { // if employee id is 0 then creating the
+		if (conseiller.getMatriculeCnsi() == '0') { // if employee id is 0 then creating the
 			// employee other updating the employee
 			conseillerService.addConseiller(conseiller);
 		} else {
 			conseillerService.updateConseiller(conseiller);
 		}
-		return new ModelAndView("redirect:/");
+		return new ModelAndView("redirect:/listConseiller");
 	}
 	
 	//-- Fin Partie controller pour conseiller ---------------------------------
