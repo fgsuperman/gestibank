@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.wha.model.Conseiller;
 import com.wha.model.Employee;
+import com.wha.service.ConseillerService;
 import com.wha.service.EmployeeService;
 
 //bonjour on test une pull 
@@ -27,6 +29,9 @@ public class EmployeeController {
 
 	@Autowired
 	private EmployeeService employeeService;
+	
+	@Autowired
+	private ConseillerService conseillerService;
 
 	@RequestMapping(value = "/")
 	public ModelAndView listEmployee(ModelAndView model) throws IOException {
@@ -71,5 +76,30 @@ public class EmployeeController {
 
 		return model;
 	}
+
+	
+	
+	//-- Debut Partie controller pour conseiller ---------------------------------
+	
+	@RequestMapping(value = "/newConseiller", method = RequestMethod.GET)
+	public ModelAndView newConseiller(ModelAndView model) {
+		Conseiller conseiller = new Conseiller();
+		model.addObject("conseiller", conseiller);
+		model.setViewName("AjoutConseillerForm");
+		return model;
+	}
+	
+	@RequestMapping(value = "/saveConseiller", method = RequestMethod.POST)
+	public ModelAndView saveConseiller(@ModelAttribute Conseiller conseiller) {
+		if (conseiller.getMatriculeCnsi() == 0) { // if employee id is 0 then creating the
+			// employee other updating the employee
+			conseillerService.addConseiller(conseiller);
+		} else {
+			conseillerService.updateConseiller(conseiller);
+		}
+		return new ModelAndView("redirect:/");
+	}
+	
+	//-- Fin Partie controller pour conseiller ---------------------------------
 
 }

@@ -33,7 +33,7 @@ public class AdministrateurServiceImpl implements AdministrateurService {
 
 	@Override
 	public List<Administrateur> getAllAdministrateur() {
-		 return administrateurDAO.getAllAdministrateur();
+		 return administrateurDAO.getAllAdministrateurs();
 		
 	}
 

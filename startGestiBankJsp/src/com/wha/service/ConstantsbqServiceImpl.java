@@ -35,7 +35,7 @@ public class ConstantsbqServiceImpl implements ConstantsbqService {
         constantsbqDAO.deleteConstantsbq(constantsbqId);
     }
  
-    public Constantsbq getConstantsbq(int cstpid) {
+    public Constantsbq getConstantsbq(int cstid) {
         return constantsbqDAO.getConstantsbq(cstid);
     }
  

@@ -1,6 +1,56 @@
-C:\Users\gk\Documents\stages java\workspace\startGestiBankJsp\src\com\wha\service\EmployeeServiceImpl.java
-C:\Users\gk\Documents\stages java\workspace\startGestiBankJsp\src\com\wha\service\EmployeeService.java
-C:\Users\gk\Documents\stages java\workspace\startGestiBankJsp\src\com\wha\model\Employee.java
-C:\Users\gk\Documents\stages java\workspace\startGestiBankJsp\src\com\wha\dao\EmployeeDAOImpl.java
-C:\Users\gk\Documents\stages java\workspace\startGestiBankJsp\src\com\wha\dao\EmployeeDAO.java
-C:\Users\gk\Documents\stages java\workspace\startGestiBankJsp\src\com\wha\controller\EmployeeController.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Compte.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\ClientDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\ConseillerDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\AffectationServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Constantsbq.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\AffectationService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\DemandesaprcreaService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\controller\EmployeeController.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\AdministrateurDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\ClientServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\AffectationDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\DemandecreationcptServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\ConstantsbqDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\AdministrateurService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\DemandecreationcptService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\EmployeeService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\CompteDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\ConstantsbqServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\DemandesaprcreaServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Operation.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\ConseillerService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\NotificationServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\DemandecreationcptDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\DemandecreationcptDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Demandesaprcrea.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Demandecreationcpt.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Employee.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\CompteDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\ClientService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\ConseillerDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\EmployeeDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\NotificationDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\OperationDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Notification.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\ConseillerServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Client.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\OperationDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\CompteService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\AffectationDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\NotificationDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\EmployeeServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\OperationService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\NotificationService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Administrateur.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\ConstantsbqService.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Conseiller.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\DemandesaprcreaDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\AdministrateurServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\AdministrateurDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\DemandesaprcreaDAOImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\CompteServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\service\OperationServiceImpl.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\model\Affectation.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\ConstantsbqDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\ClientDAO.java
+C:\GK_Java_cours\gestibank\git\startGestiBankJsp\src\com\wha\dao\EmployeeDAOImpl.java
