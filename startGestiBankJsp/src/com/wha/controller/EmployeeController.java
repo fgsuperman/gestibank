@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.wha.model.Employee;
 import com.wha.service.EmployeeService;
 
+//bonjour on test une pull 
 @Controller
 public class EmployeeController {
 	private static final Logger logger = Logger.getLogger(EmployeeController.class);
