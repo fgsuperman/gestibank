@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.wha.dao.ConstantsbqDAO;
 import com.wha.model.Constantsbq;
-
+//fhghgfghfghffh
 @Service
 @Transactional
 public class ConstantsbqServiceImpl implements ConstantsbqService {
