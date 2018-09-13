@@ -18,68 +18,28 @@ import com.wha.model.Employee;
 import com.wha.service.ConseillerService;
 import com.wha.service.EmployeeService;
 
-
-//bonjour on test une pull 
 @Controller
-public class EmployeeController {
-	private static final Logger logger = Logger.getLogger(EmployeeController.class);
+public class ConseillerController {
+	
+	private static final Logger logger = Logger.getLogger(ConseillerController.class);
 
-	public EmployeeController() {
-		System.out.println("**** EmployeeController() ****");
+	public ConseillerController() {
+		System.out.println(" **** ConseillerController() ****");
 	}
 
-	@Autowired
-	private EmployeeService employeeService;
 	
 	@Autowired
 	private ConseillerService conseillerService;
 
-	@RequestMapping(value = "/1")
-	public ModelAndView listEmployee(ModelAndView model) throws IOException {
-		List<Employee> listEmployee = employeeService.getAllEmployees();
-		model.addObject("listEmployee", listEmployee);
-		model.setViewName("home");
-		return model;
-	}
-
-	@RequestMapping(value = "/newEmployee", method = RequestMethod.GET)
-	public ModelAndView newContact(ModelAndView model) {
-		Employee employee = new Employee();
-		model.addObject("employee", employee);
-		model.setViewName("EmployeeForm");
-		return model;
-	}
-
-	@RequestMapping(value = "/saveEmployee", method = RequestMethod.POST)
-	public ModelAndView saveEmployee(@ModelAttribute Employee employee) {
-		if (employee.getId() == 0) { // if employee id is 0 then creating the
-			// employee other updating the employee
-			employeeService.addEmployee(employee);
-		} else {
-			employeeService.updateEmployee(employee);
-		}
-		return new ModelAndView("redirect:/");
-	}
-
-	@RequestMapping(value = "/deleteEmployee", method = RequestMethod.GET)
-	public ModelAndView deleteEmployee(HttpServletRequest request) {
-		int employeeId = Integer.parseInt(request.getParameter("id"));
-		employeeService.deleteEmployee(employeeId);
-		return new ModelAndView("redirect:/");
-	}
-
-	@RequestMapping(value = "/editEmployee", method = RequestMethod.GET)
-	public ModelAndView editContact(HttpServletRequest request) {
-		int employeeId = Integer.parseInt(request.getParameter("id"));
-		Employee employee = employeeService.getEmployee(employeeId);
-		ModelAndView model = new ModelAndView("EmployeeForm");
-		model.addObject("employee", employee);
-
-		return model;
-	}
-
 	
-	/*
+	@RequestMapping(value = "/conseiller")
+	public ModelAndView listConseiller1(ModelAndView model) throws IOException {
+		List<Conseiller> listConseiller = conseillerService.getAllConseillers();
+		model.addObject("listConseiller", listConseiller);
+		model.setViewName("listConseiller");
+		return model;
+	}
+	
 	//-- Debut Partie controller pour conseiller ---------------------------------
 	
 	@RequestMapping(value = "/listConseiller")
@@ -134,5 +94,6 @@ public class EmployeeController {
 
 	
 	//-- Fin Partie controller pour conseiller ---------------------------------
-*/
+
+
 }
