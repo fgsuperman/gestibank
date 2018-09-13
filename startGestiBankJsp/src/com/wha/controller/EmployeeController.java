@@ -93,20 +93,44 @@ public class EmployeeController {
 	public ModelAndView newConseiller(ModelAndView model) {
 		Conseiller conseiller = new Conseiller();
 		model.addObject("conseiller", conseiller);
-		model.setViewName("AjoutConseillerForm");
+		model.setViewName("ConseillerForm");
 		return model;
 	}
 	
 	@RequestMapping(value = "/saveConseiller", method = RequestMethod.POST)
 	public ModelAndView saveConseiller(@ModelAttribute Conseiller conseiller) {
-		if (conseiller.getMatriculeCnsi() == '0') { // if employee id is 0 then creating the
+		System.out.println("** EmployeeController: saveConseiller() ");
+		System.out.println("--> conseiller.getMatriculeCnsi() = " + conseiller.getMatriculeCnsi());
+		if (conseiller.getMatriculeCnsi() == 0) { // if employee id is 0 then creating the
 			// employee other updating the employee
 			conseillerService.addConseiller(conseiller);
-		} else {
+			System.out.println("--> EmployeeController : conseillerService.addConseiller()");
+		} else { 
 			conseillerService.updateConseiller(conseiller);
+			System.out.println("--> EmployeeController : conseillerService.updateConseiller()");
 		}
 		return new ModelAndView("redirect:/listConseiller");
 	}
+	
+	
+	@RequestMapping(value = "/editConseiller", method = RequestMethod.GET)
+	public ModelAndView editConseiller(HttpServletRequest request) {
+		int conseillerId = Integer.parseInt(request.getParameter("matriculeCnsi"));
+		Conseiller conseiller = conseillerService.getConseiller(conseillerId);
+		ModelAndView model = new ModelAndView("ConseillerForm");
+		model.addObject("conseiller", conseiller);
+
+		return model;
+	}
+	
+	
+	@RequestMapping(value = "/deleteConseiller", method = RequestMethod.GET)
+	public ModelAndView deleteConseiller(HttpServletRequest request) {
+		int conseillerId = Integer.parseInt(request.getParameter("matriculeCnsi"));
+		conseillerService.deleteConseiller(conseillerId);
+		return new ModelAndView("redirect:/listConseiller");
+	}
+
 	
 	//-- Fin Partie controller pour conseiller ---------------------------------
 

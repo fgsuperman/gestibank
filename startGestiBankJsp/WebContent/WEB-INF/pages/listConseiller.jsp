@@ -31,9 +31,9 @@
 					<td>${conseiller.pseudo}</td>
 					<td>${conseiller.adresse}</td>
 					<td>${conseiller.tel}</td>
-					<td><a href="editConseiller?id=${conseiller.matriculeCnsi}">Edit</a>
+					<td><a href="editConseiller?matriculeCnsi=${conseiller.matriculeCnsi}">Edit</a>
 						&nbsp;&nbsp;&nbsp;&nbsp; <a
-						href="deleteConseiller?id=${conseiller.matriculeCnsi}">Delete</a></td>
+						href="deleteConseiller?matriculeCnsi=${conseiller.matriculeCnsi}">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</table>
